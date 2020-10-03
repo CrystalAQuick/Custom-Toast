@@ -2,6 +2,7 @@ package com.example.quickcustomtoastdemo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -42,19 +43,23 @@ public class MainActivity extends AppCompatActivity {
         toast.show();
     }
 
-    // Event to display a fancy toast
+    // Event to display a fancy toast. This contains both an image and colored background
+    // See the layoutfile custom_fancy_toast for a look inside.
     public void displayFancyToast(View view){
-//        LayoutInflater inflater = getLayoutInflater();
-//        View custom_layout = inflater.inflate(R.layout.custom_toast_image, (ViewGroup) findViewById(R.id.custom_toast_image));
-//
-//        Toast toast = new Toast(getApplicationContext());
-//        // Set Gravity allows you to position your toast
-//        toast.setGravity(Gravity.CENTER, 0, 0);
-//        toast.setDuration(Toast.LENGTH_SHORT);
-//        toast.setView(custom_layout);
-//        toast.show();
+        // LayoutInflater is used to create a new layout from an xml file
+        LayoutInflater inflater = getLayoutInflater();
+
+        // Defines the layout, takes in an xml object and builds a view. Refers an existing view
+        View custom_layout = inflater.inflate(R.layout.custom_fancy_toast, (ViewGroup) findViewById(R.id.custom_fancy_toast));
+
+        // Creating a new toast object
+        Toast toast = new Toast(getApplicationContext());
+
+        // Setting the length to display the toast
+        toast.setDuration(Toast.LENGTH_LONG);
+
+        // Specifying the view to show
+        toast.setView(custom_layout);
+        toast.show();
     }
-
-
-
 }

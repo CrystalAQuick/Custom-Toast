@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/custom_fancy_toast">
+
+    <TextView
+        android:id="@+id/custom_fancy_text"
+        android:layout_width="285dp"
+        android:layout_height="57dp"
+        android:background="@drawable/rounded_corners_toast"
+        android:backgroundTint="@color/colorAccent"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:paddingRight="60dp"
+        android:text="This is a super fancy Toast!"
+        android:textSize="16dp"
+        android:textStyle="normal|bold"
+        app:drawableLeftCompat="@drawable/toast_boarder_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <!--You can either have a separate image view and overlap it
+        or you can 'embed' an image into the textview.
+        Below is code if you wanted to do it the other way. -->
+    <!--    <ImageView-->
+<!--        android:id="@+id/custom_fancy_toast_image"-->
+<!--        android:layout_width="58dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.161"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.201"-->
+<!--        app:srcCompat="@drawable/toast_boarder" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>
