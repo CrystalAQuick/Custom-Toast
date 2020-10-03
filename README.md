@@ -4,18 +4,19 @@
 
 
 ### Custom Colored Toast
-![This is a alt text.](https://github.com/CrystalAQuick/custom_toast_demo/blob/master/app/src/main/res/ImagesForGitHub/coloredToast.PNG "This is a sample image.")
+<img src="https://github.com/CrystalAQuick/custom_toast_demo/blob/master/app/src/main/res/ImagesForGitHub/coloredToast.PNG" width="30%" height="30%">
 
 ###### The display for a custom colored toast.
 
 ### Custom Image Toast
-![This is a alt text.](https://github.com/CrystalAQuick/custom_toast_demo/blob/master/app/src/main/res/ImagesForGitHub/imageToast.PNG "This is a sample image.")
+<img src="https://github.com/CrystalAQuick/custom_toast_demo/blob/master/app/src/main/res/ImagesForGitHub/imageToast.PNG" width="20%" height="20%">
+
 
 ###### The display for a custom image toast.
 
 
 ### Custom Fancy Toast
-![This is a alt text.](https://github.com/CrystalAQuick/custom_toast_demo/blob/master/app/src/main/res/ImagesForGitHub/fancy.PNG "This is a sample image.")
+<img src="https://github.com/CrystalAQuick/custom_toast_demo/blob/master/app/src/main/res/ImagesForGitHub/fancy.PNG" width="30%" height="30%">
 
 ###### The display for a custom fancy toast. (Image and custom colored)
 
