@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         View custom_layout = inflater.inflate(R.layout.custom_toast_color, (ViewGroup) findViewById(R.id.custom_toast_color));
 
         Toast toast = new Toast(getApplicationContext());
-        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setDuration(Toast.LENGTH_SHORT);
         toast.setView(custom_layout);
         toast.show();
     }
@@ -37,9 +37,22 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = new Toast(getApplicationContext());
         // Set Gravity allows you to position your toast
         toast.setGravity(Gravity.CENTER, 0, 0);
-        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setDuration(Toast.LENGTH_SHORT);
         toast.setView(custom_layout);
         toast.show();
+    }
+
+    // Event to display a fancy toast
+    public void displayFancyToast(View view){
+//        LayoutInflater inflater = getLayoutInflater();
+//        View custom_layout = inflater.inflate(R.layout.custom_toast_image, (ViewGroup) findViewById(R.id.custom_toast_image));
+//
+//        Toast toast = new Toast(getApplicationContext());
+//        // Set Gravity allows you to position your toast
+//        toast.setGravity(Gravity.CENTER, 0, 0);
+//        toast.setDuration(Toast.LENGTH_SHORT);
+//        toast.setView(custom_layout);
+//        toast.show();
     }
 
 

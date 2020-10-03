@@ -5,20 +5,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_bright"
     android:id="@+id/custom_toast_color">
 
+<!-- The textView uses another resource file
+   in order to display with rounded edges.
+   It also sets the color in that resource file.
+   See file rounded_corners_toast.xml -->
     <TextView
         android:id="@+id/text_custom_toast"
         android:layout_width="266dp"
         android:layout_height="54dp"
-        android:text="This is a custom colored toast!"
+        android:background="@drawable/rounded_corners_toast"
         android:gravity="center"
+        android:textStyle="normal|bold"
+        android:text="This is a custom colored toast!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintHorizontal_bias="0.662"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.091" />
+        app:layout_constraintVertical_bias="0.09" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
